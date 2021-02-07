@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExerciseTest</string>
+    <string name="popularity">Popularity: %s</string>
+
+
+    <string name="args_key_movie_id">args_key_movie_id</string>
+</resources>

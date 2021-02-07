@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/route"
+    app:startDestination="@id/imdbListFragment">
+
+    <fragment
+        android:id="@+id/imdbListFragment"
+        android:name="com.bobryshev.exercisetest.ui.MainFragment"
+        android:label="ImdbListFragment" >
+        <action
+            android:id="@+id/action_imdbListFragment_to_imdbDetailMovieFragment"
+            app:destination="@id/imdbDetailMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imdbDetailMovieFragment"
+        android:name="com.bobryshev.exercisetest.ui.DetailMovieFragment"
+        android:label="ImdbDetailMovieFragment">
+
+        <argument
+            android:name="@string/args_key_movie_id"
+            app:argType="string"/>
+    </fragment>
+</navigation>
